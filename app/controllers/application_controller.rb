@@ -9,4 +9,9 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
+  post '/post' do
+    @title = params["form"]["name"]
+    erb :index
+  end
+
 end
