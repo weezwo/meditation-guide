@@ -1,6 +1,6 @@
 <h1>So you want to start meditating...</h1>
 <h2><%=@title%></h2>
-
+Filter by tag: <%= format_tag_list %>
 <ul>
 <% @resources.each do |r|%>
   <li><a href=<%=r.url%>><%=r.name %></a></li>
