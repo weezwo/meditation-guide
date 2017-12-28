@@ -5,12 +5,8 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/' do
-    @title = "HEY"
-    erb :index
-  end
-
-  post '/post' do
-    @title = params["form"]["name"]
+    @title = "We'd like to help."
+    @resources = Resource.approved
     erb :index
   end
 
