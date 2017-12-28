@@ -1,4 +1,5 @@
 require './config/environment'
 
-use ResourceController
+use ResourcesController
+use TagsController
 run ApplicationController
