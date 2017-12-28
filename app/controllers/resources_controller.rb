@@ -1,10 +1,10 @@
-class ResourceController < ApplicationController
+class ResourcesController < ApplicationController
   get '/resources/new' do
     erb :"resources/new"
   end
 
   post '/resources/create' do
     resource = Resource.create(params[:resource])
-    raise resource.inspect
+    redirect_to '/'
   end
 end
